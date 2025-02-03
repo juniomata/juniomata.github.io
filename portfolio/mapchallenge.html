@@ -1,400 +1,627 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Junio Matahelemual</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
+  <head>
+    <meta charset="utf-8">
+    <title>Junio Matahelemual Map Challenge</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
 
-        <!-- Favicon -->
-        <link href="../img/favicon.ico" rel="icon">
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon">
 
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="../lib/animate/animate.min.css" rel="stylesheet">
-        <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
-        <link href="../css/style.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
 
-        <!-- Logo -->
-        <link rel="icon" href="../img/juniodata-logo-sq.png" type="image/png" sizes="any">
+    <!-- Logo -->
+    <link rel="icon" href="../img/juniodata-logo-sq.png" type="image/png" sizes="any">
 
-    </head>
+    <!-- Portfolio Image Styles -->
+    <style>
+      /* Container for each map image */
+      .portfolio-img {
+        width: 100%;
+        aspect-ratio: 3 / 2; /* Maintain 3:2 ratio */
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      /* Make the anchor inside .portfolio-img a flex container to center its image */
+      .portfolio-img a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      .portfolio-img img {
+        max-width: 85%;
+        max-height: 85%;
+        object-fit: contain;
+      }
+      .portfolio-img.wide img {
+        max-width: 90%;
+        max-height: 80%;
+      }
+      .portfolio-img.portrait img {
+        max-width: 40%;
+        max-height: 85%;
+      }
+      
+      .portfolio-text {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .portfolio-text h3 {
+        font-size: 1em;
+        margin: 0;
+      }
+      .portfolio-text a {
+        text-decoration: none;
+        color: #007bff;
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">juniomata</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+          <div class="navbar-nav ml-auto">
+            <a href="/index.html" class="nav-item nav-link">Home</a>
+            <a href="/index.html" class="nav-item nav-link">Service</a>
+            <a href="/index.html" class="nav-item nav-link">Experience</a>
+            <a href="/portfolio/portfolio.html" class="nav-item nav-link">Portfolio</a>
+            <a href="/activity.html" class="nav-item nav-link">Activity</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Nav Bar End -->
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="51">
-        <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg bg-light navbar-light">
-            <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">juniomata</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto">
-                        <a href="/index.html" class="nav-item nav-link">Home</a>
-                        <a href="/index.html" class="nav-item nav-link">Service</a>
-                        <a href="/index.html" class="nav-item nav-link">Experience</a>
-                        <a href="/portfolio/portfolio.html" class="nav-item nav-link">Portfolio</a>
-                        <a href="/activity.html" class="nav-item nav-link">Activity</a>
-                    </div>
-                </div>
+    <!-- Hero Start -->
+    <div class="hero" id="home">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6">
+            <!-- Hero content (if any) -->
+          </div>
+          <div class="col-sm-12 col-md-6 d-none d-md-block">
+            <div class="hero-image">
+              <!-- <img src="../img/hero.png" alt="Hero Image"> -->
             </div>
+          </div>
         </div>
-        <!-- Nav Bar End -->
+      </div>
+    </div>
+    <!-- Hero End -->
 
+    <!-- Portfolio Start -->
+    <div class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+          <h2>30 Days Map Challenge</h2>
+          <p>
+            The 30-Day Map Challenge is a challenge initiated by Topi Tjukanov that invites map makers to create and share maps based on daily themes. This is my very first time joining the challenge and it has been an exciting journey. 
+            Explore how I created each map on 
+            <a href="https://github.com/juniomata/30DaysMapChallenge" target="_blank">my Github page</a>🔗👈
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <ul id="portfolio-filter">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-1">Climate</li>
+              <li data-filter=".filter-2">Environment</li>
+              <li data-filter=".filter-3">Sustainability</li>
+              <li data-filter=".filter-4">Energy</li>
+              <li data-filter=".filter-5">Urban</li>
+              <li data-filter=".filter-6">General</li>
+            </ul>
+          </div>
+        </div>
 
-        <!-- Hero Start -->
-        <div class="hero" id="home">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-6">
-                        <!-- <div class="hero-content">
-                            <div class="hero-text">
-                                <p>Hi there... I'm</p>
-                                <h1>Junio Matahelemual</h1>
-                                <h2></h2>
-                                <div class="typed-text">Data Scientist, Data Analyst, Business Intelligence Analyst, GIS Analyst</div>
-                            </div>
-                            <div class="hero-btn">
-                                <a class="btn" href="https://github.com/juniomata/" target="_blank">Visit My Github</a>
-                                <a class="btn" href="https://mail.google.com/mail/u/0/?fs=1&to=matahelemualjunio@gmail.com&tf=cm" target="_blank">Contact Me</a>
-                            </div>
-                        </div> -->
-                    </div>
-                    <div class="col-sm-12 col-md-6 d-none d-md-block">
-                        <div class="hero-image">
-                            <!-- <img src="../img/hero.png" alt="Hero Image"> -->
-                        </div>
-                    </div>
-                </div>
+        <!-- Portfolio Items (3-column layout) -->
+        <div class="row portfolio-container">
+          <!-- Row 1: Day 14, Day 3, Day 17 -->
+          <!-- Day 14 - World map -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img portrait">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day14_worldmap/temperature_anomalies_2024_dark.png" target="_blank">
+                  <img src="../img/30maps/day14_temperature_anomalies_2024_dark.png" alt="Day 14 - World map">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day14_worldmap/temperature_anomalies_2024_dark.png" target="_blank">World Temperature Anomaly</a></h3>
+              </div>
             </div>
-        </div>
-        <!-- Hero End -->
+          </div>
 
-
-        <!-- Portfolio Start -->
-        <style>
-            /* Ensure the container maintains a 3:2 aspect ratio */
-            .portfolio-img {
-                width: 100%;
-                aspect-ratio: 3 / 2; /* Maintain 3:2 ratio */
-                background-color: #fff; /* Light gray background */
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                overflow: hidden;
-            }
-    
-            /* Shrink images to 75% of their size while centering them */
-            .portfolio-img img {
-                max-width: 85%; /* Scale the image to 75% of its original size */
-                max-height: 85%; /* Ensure it fits within the container */
-                object-fit: contain; /* Fit the image proportionally without cropping */
-            }
-
-            /* Custom scaling for specific images */
-            .portfolio-img.wide img {
-                max-width: 90%; /* Larger image */
-                max-height: 80%;
-            }
-
-            .portfolio-img.portrait img {
-                max-width: 40%; /* portrait image */
-                max-height: 85%;
-            }
-        
-            .portfolio-text {
-                text-align: center;
-                margin-top: 10px;
-            }
-    
-            .portfolio-text h3 {
-                font-size: 1.2em;
-                margin: 0;
-            }
-    
-            .portfolio-text a {
-                text-decoration: none;
-                color: #007bff;
-            }
-        </style>
-        <div class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p></p>
-                    <h2>30 Days Map Challenge</h2>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <ul id="portfolio-filter">
-                            <li data-filter="*" class="filter-active">2024</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row portfolio-container">
-                    <!-- Tambora Volcano 3D -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img wide">
-                                <img src="https://github.com/juniomata/30DaysMapChallenge/blob/main/day18_3D/output/3d_Tambora_Annotated.png?raw=true" alt="Tambora Volcano 3D">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Tambora Volcano 3D</h3>
-                                <a class="btn" href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day18_3D/output/3d_Tambora_Annotated.png" target="_blank">&#x1F50E;&#xFE0E;</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Orangutan vs Deforestation -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="https://github.com/juniomata/30DaysMapChallenge/blob/main/day21_conflict/day21_orangutan_vs_deforestation.png?raw=true" alt="Orangutan vs Deforestation">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Orangutan vs Deforestation</h3>
-                                <a class="btn" href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day21_conflict/day21_orangutan_vs_deforestation.png" target="_blank">&#x1F50E;&#xFE0E;</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Global Temperature Anomalies -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img portrait">
-                                <img src="https://github.com/juniomata/30DaysMapChallenge/blob/main/day14_worldmap/temperature_anomalies_2024_dark.png?raw=true" alt="Global Temperature Anomalies">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Global Temperature Anomalies</h3>
-                                <a class="btn" href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day14_worldmap/temperature_anomalies_2024_dark.png" target="_blank">&#x1F50E;&#xFE0E;</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- NYC Walkability Index -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="https://github.com/juniomata/30DaysMapChallenge/blob/main/day17_collaborative/finalmap_NYC_Walkability_Index.png?raw=true" alt="NYC Walkability Index">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>NYC Walkability Index</h3>
-                                <a class="btn" href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day17_collaborative/finalmap_NYC_Walkability_Index.png" target="_blank">&#x1F50E;&#xFE0E;</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- NYC Street Trees -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="https://github.com/juniomata/30DaysMapChallenge/blob/main/day04_hexagon/finalmap_street_trees_nyc_hexagons.png?raw=true" alt="NYC Street Trees">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>NYC Street Trees</h3>
-                                <a class="btn" href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day04_hexagon/finalmap_street_trees_nyc_hexagons.png" target="_blank">&#x1F50E;&#xFE0E;</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- NYC Energy and Water Use Intensity -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img portrait">
-                                <img src="https://github.com/juniomata/30DaysMapChallenge/blob/main/day03_polygon/day3_polygon_energy-water-use.png?raw=true" alt="NYC Energy and Water Use Intensity">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>NYC Energy and Water Use Intensity</h3>
-                                <a class="btn" href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day03_polygon/day3_polygon_energy-water-use.png" target="_blank">&#x1F50E;&#xFE0E;</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Arctic Sea Ice Extent Changes -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img wide">
-                                <img src="https://github.com/juniomata/30DaysMapChallenge/blob/main/day11_arctic/day11_Arctic_SeaIceExtent.gif?raw=true" alt="Arctic Sea Ice Extent Changes">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Arctic Sea Ice Extent Changes</h3>
-                                <a class="btn" href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day11_arctic/day11_Arctic_SeaIceExtent.gif" target="_blank">&#x1F50E;&#xFE0E;</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Jakarta 3D Buildings -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img wide">
-                                <img src="https://github.com/juniomata/30DaysMapChallenge/blob/main/day29_overture/day29_jakarta_overture_buildings.gif?raw=true" alt="NYC Circular Boundary Map">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Jakarta 3D Buildings</h3>
-                                <a class="btn" href="/portfolio/jakarta_overture_buildings.html" target="_blank">&#x1F50E;&#xFE0E;</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- NYC Circular Boundary Map -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img portrait">
-                                <img src="https://github.com/juniomata/30DaysMapChallenge/blob/main/day24_onlycircular/day24_CircularShapes_ManhattanBoundary.png?raw=true" alt="NYC Circular Boundary Map">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>NYC Circular Boundary Map</h3>
-                                <a class="btn" href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day24_onlycircular/day24_CircularShapes_ManhattanBoundary.png" target="_blank">&#x1F50E;&#xFE0E;</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Borneo River Network -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="https://github.com/juniomata/30DaysMapChallenge/blob/main/day02_lines/finalmap_kalimantan_river_network_annotated.png?raw=true" alt="Borneo River Network">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Borneo River Network</h3>
-                                <a class="btn" href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day02_lines/finalmap_kalimantan_river_network_annotated.png" target="_blank">&#x1F50E;&#xFE0E;</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Jakarta Circular Map -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="https://github.com/juniomata/30DaysMapChallenge/blob/main/day20_OSM/finalmap_jakarta_circular_map_annotated.png?raw=true" alt="Jakarta Circular Map">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Jakarta Circular Map</h3>
-                                <a class="btn" href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day20_OSM/finalmap_jakarta_circular_map_annotated.png" target="_blank">&#x1F50E;&#xFE0E;</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- South Sumatra Forest Loss -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="https://github.com/juniomata/30DaysMapChallenge/blob/main/day06_raster/figures/finalmap_south_sumatra_forest_loss.png?raw=true" alt="South Sumatra Forest Loss">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>South Sumatra Forest Loss</h3>
-                                <a class="btn" href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day06_raster/figures/finalmap_south_sumatra_forest_loss.png" target="_blank">&#x1F50E;&#xFE0E;</a>
-                            </div>
-                        </div>
-                    </div>
-                                        
-                    <!-- US Climate Migration -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="../img/portfolio-usclimate.jpg" alt="US Climate Migration">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>US Climate Migration</h3>
-                                <a class="btn" href="https://public.tableau.com/app/profile/junio.mata/viz/USClimateMigrations/Dashboard1?publish=yes" target="_blank">&#x1F50E;&#xFE0E;</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Indonesia Ring of Fire -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="https://github.com/juniomata/30DaysMapChallenge/blob/main/day07_vintage/IndonesiaRingofFire.png?raw=true" alt="Indonesia Ring of Fire">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Indonesia Ring of Fire</h3>
-                                <a class="btn" href="https://public.tableau.com/app/profile/junio.mata/viz/IndonesiaRingofFire_17312940926410/Dashboard1" target="_blank">&#x1F50E;&#xFE0E;</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Land Cover Changes Jakarta Metro Area -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="https://github.com/juniomata/30DaysMapChallenge/blob/main/day12_timeandspace/LandCover_Changes_Jabodetabek.jpg?raw=true" alt="Land Cover Changes Jakarta Metro Area">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Land Cover Changes Jakarta Metro Area</h3>
-                                <a class="btn" href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day12_timeandspace/LandCover_Changes_Jabodetabek.jpg" target="_blank">&#x1F50E;&#xFE0E;</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <!-- Day 3 - Polygons -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img wide">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day03_polygon/day3_polygon_energy-water-use.png" target="_blank">
+                  <img src="../img/30maps/day03_polygon_energy-water-use.png" alt="Day 3 - Polygons">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day03_polygon/day3_polygon_energy-water-use.png" target="_blank">Energy and Water Use Intensity NYC</a></h3>
+              </div>
             </div>
-        </div>
-        <!-- Portfolio End -->
+          </div>
 
-
-
-        <!-- Footer Start -->
-        <div class="footer wow fadeIn" data-wow-delay="0.3s">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="footer-info">
-                        <h2>Godfried Junio Matahelemual</h2>
-                        <h3>New York, NY, United States</h3>
-                        <div class="footer-menu">
-                            <!-- <p>>62 821 2234 3336</p> -->
-                            <p>junio@datascience.or.id</p>
-                        </div>
-                        <div class="footer-social">
-                            <a href="https://mail.google.com/mail/u/0/?fs=1&to=matahelemualjunio@gmail.com&tf=cm"><i class="fas fa-mail-bulk"></i></a>
-                            <a href="https://www.youtube.com/watch?v=0OngyN1q75E&list=PL574h2o5_RfP7gHk0ga0UbXzohFId8Dgj&t=355s"><i class="fab fa-youtube"></i></a>
-                            <a href="https://github.com/juniomata/"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/juniomata/"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container copyright">
-                    <p>&copy; <a href="#">Junio Portfolio</a>, All Right Reserved | Template By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                </div>
+          <!-- Day 17 - Collaborative -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day17_collaborative/finalmap_NYC_Walkability_Index.png" target="_blank">
+                  <img src="../img/30maps/day17_finalmap_NYC_Walkability_Index.png" alt="Day 17 - Collaborative">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day17_collaborative/finalmap_NYC_Walkability_Index.png" target="_blank">NYC Walkability Map</a></h3>
+              </div>
             </div>
-        </div>
-        <!-- Footer End -->
-        
-        
-        <!-- Back to top button -->
-        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
-        
-        
-        <!-- Pre Loader -->
-        <div id="loader" class="show">
-            <div class="loader"></div>
-        </div>
+          </div>
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="../lib/easing/easing.min.js"></script>
-        <script src="../lib/wow/wow.min.js"></script>
-        <script src="../lib/waypoints/waypoints.min.js"></script>
-        <script src="../lib/typed/typed.min.js"></script>
-        <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="../lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="../lib/lightbox/js/lightbox.min.js"></script>
-        
-        <!-- Contact Javascript File -->
-        <script src="../mail/jqBootstrapValidation.min.js"></script>
-        <script src="../mail/contact.js"></script>
+          <!-- Row 2: Day 18, Day 21, Day 11 -->
+          <!-- Day 18 - 3D -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img wide">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/tree/main/day18_3D/output/3d_Tambora_Annotated.png" target="_blank">
+                  <img src="../img/30maps/day18_Tambora_Annotated.png" alt="Day 18 - 3D">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/tree/main/day18_3D/output/3d_Tambora_Annotated.png" target="_blank">3D Tambora Volcano</a></h3>
+              </div>
+            </div>
+          </div>
 
-        <!-- Template Javascript -->
-        <script src="../js/main.js"></script>
-    </body>
+          <!-- Day 21 - Conflict -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day21_conflict/day21_orangutan_vs_deforestation.png" target="_blank">
+                  <img src="../img/30maps/day21_orangutan_vs_deforestation.png" alt="Day 21 - Conflict">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day21_conflict/day21_orangutan_vs_deforestation.png" target="_blank">Orangutan vs Deforestation</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 11 - Arctic Sea Ice Extent -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img wide">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/tree/main/day11_arctic/day11_Arctic_SeaIceExtent.gif" target="_blank">
+                  <img src="../img/30maps/day11_Arctic_SeaIceExtent.gif" alt="Day 11 - Arctic Sea Ice Extent">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/tree/main/day11_arctic/day11_Arctic_SeaIceExtent.gif" target="_blank">Map Arctic Ice Extent Changes</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 3: Day 29, Day 27, Day 7 -->
+          <!-- Day 29 - Overture -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-? wow fadeInUp" data-wow-delay="0.8s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img wide">
+                <a href="https://juniomata.github.io/portfolio/jakarta_overture_buildings.html" target="_blank">
+                  <img src="../img/30maps/day29_jakarta_overture_buildings.gif" alt="Day 29 - Overture">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://juniomata.github.io/portfolio/jakarta_overture_buildings.html" target="_blank">Jakarta 3D Buildings</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 27 - Micromapping -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-? wow fadeInUp" data-wow-delay="0.9s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day27_micromapping/day27_3DBuildingsMiamiBeach.gif" target="_blank">
+                  <img src="../img/30maps/day27_3DBuildingsMiamiBeach.gif" alt="Day 27 - Micromapping">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day27_micromapping/day27_3DBuildingsMiamiBeach.gif" target="_blank">3D Belle Isle, Sea Level Rise Impact</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 7 - Vintage -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-? wow fadeInUp" data-wow-delay="1.0s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://public.tableau.com/app/profile/junio.mata/viz/IndonesiaRingofFire_17312940926410/Dashboard1" target="_blank">
+                  <img src="../img/30maps/day07_IndonesiaRingofFire.png" alt="Day 7 - Vintage">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://public.tableau.com/app/profile/junio.mata/viz/IndonesiaRingofFire_17312940926410/Dashboard1" target="_blank">Indonesia Ring of Fire</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 4: Day 19, Day 28, Day 2 -->
+          <!-- Day 19 - Typography -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="1.1s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day19_wordcloud/day19_wordcloud_nyClimateActionPlan.png" target="_blank">
+                  <img src="../img/30maps/day19_wordcloud_nyClimateActionPlan.png" alt="Day 19 - Typography">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day19_wordcloud/day19_wordcloud_nyClimateActionPlan.png" target="_blank">Word Cloud of NY State Climate Action Council Scoping Plan</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 28 - Blue planet -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="1.2s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img portrait">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day28_blueplanet/day28_mississippi_rem.png" target="_blank">
+                  <img src="../img/30maps/day28_mississippi_rem.png" alt="Day 28 - Blue planet">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day28_blueplanet/day28_mississippi_rem.png" target="_blank">Mississippi River REM</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 2 - Lines -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="1.3s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day02_lines/finalmap_kalimantan_river_network_annotated.png" target="_blank">
+                  <img src="../img/30maps/day02_kalimantan_river_network_annotated.png" alt="Day 2 - Lines">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day02_lines/finalmap_kalimantan_river_network_annotated.png" target="_blank">Kalimantan River Network</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 5: Day 4, Day 22, Day 6 -->
+          <!-- Day 4 - Hexagons -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1.4s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day04_hexagon/finalmap_street_trees_nyc_hexagons.png" target="_blank">
+                  <img src="../img/30maps/day04_finalmap_street_trees_nyc_hexagons.png" alt="Day 4 - Hexagons">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day04_hexagon/finalmap_street_trees_nyc_hexagons.png" target="_blank">Hex map of NYC Trees</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 22 - Two colours -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-5 wow fadeInUp" data-wow-delay="1.5s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day22_twocolours/figures/finalmap_jakarta_roads_circular_map_annotated.png" target="_blank">
+                  <img src="../img/30maps/day22_finalmap_jakarta_roads_circular_map_annotated.png" alt="Day 22 - 2 colours">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day22_twocolours/figures/finalmap_jakarta_roads_circular_map_annotated.png" target="_blank">Jakarta Road Circular Map B&W</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 6 - Raster -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="1.6s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day06_raster/figures/finalmap_south_sumatra_forest_loss.png" target="_blank">
+                  <img src="../img/30maps/day06_finalmap_south_sumatra_forest_loss.png" alt="Day 6 - Raster">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day06_raster/figures/finalmap_south_sumatra_forest_loss.png" target="_blank">South Sumatra Forest Loss</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 6: Day 25, Day 26, Day 13 -->
+          <!-- Day 25 - Heat -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="1.7s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img wide">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day25_heat/day25_heat_jakartaLST.gif" target="_blank">
+                  <img src="../img/30maps/day25_heat_jakartaLST.gif" alt="Day 25 - Heat">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day25_heat/day25_heat_jakartaLST.gif" target="_blank">Jakarta Land Surface Temperature</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 26 - Map projections -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="1.8s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img wide">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day26_mapprojections/day26_nowadays_temp_anomalies_vs_preindustrial.png" target="_blank">
+                  <img src="../img/30maps/day26_nowadays_temp_anomalies_vs_preindustrial.png" alt="Day 26 - Projections">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day26_mapprojections/day26_nowadays_temp_anomalies_vs_preindustrial.png" target="_blank">Temperature Anomalies Pre-Industrial</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 13 - New tool -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="1.9s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://clausa.app.carto.com/map/79d7ed11-fb2b-4a3b-8b59-b31c1115e8fd" target="_blank">
+                  <img src="../img/30maps/day13_powerplantsriskdashboard.gif" alt="Day 13 - New tool">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://clausa.app.carto.com/map/79d7ed11-fb2b-4a3b-8b59-b31c1115e8fd" target="_blank">California Power Plant Risk to Climate</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 7: Day 12, Day 20, Day 1 -->
+          <!-- Day 12 - Time and space -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="2.0s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day12_timeandspace/day12_jakartalandcoverchange.gif" target="_blank">
+                  <img src="../img/30maps/day12_jakartalandcoverchange.gif" alt="Day 12 - Time and space">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day12_timeandspace/day12_jakartalandcoverchange.gif" target="_blank">Land Cover Changes in Jabodetabek</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 20 - OSM -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-5 wow fadeInUp" data-wow-delay="2.1s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day20_OSM/finalmap_jakarta_circular_map_annotated.png" target="_blank">
+                  <img src="../img/30maps/day20_finalmap_jakarta_circular_map_annotated.png" alt="Day 20 - OSM">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day20_OSM/finalmap_jakarta_circular_map_annotated.png" target="_blank">Jakarta Circular Map</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 1 - Point -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="2.2s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://juniomata.github.io/portfolio/renewableplants.html" target="_blank">
+                  <img src="../img/30maps/day01_renewableplants.png" alt="Day 1 - Point">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://juniomata.github.io/portfolio/renewableplants.html" target="_blank">North America Renewable Energy Plants</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 8: Day 23, Day 30, Day 24 -->
+          <!-- Day 23 - Memory -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="2.3s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://ee-juniomata.projects.earthengine.app/view/lakepowell" target="_blank">
+                  <img src="../img/30maps/day23_lakepowellmemory.gif" alt="Day 23 - Memory">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://ee-juniomata.projects.earthengine.app/view/lakepowell" target="_blank">Memories of Lake Powell</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 30 - Final map -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="2.4s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://public.tableau.com/app/profile/junio.mata/viz/30DaysMapChallenge/Dashboard1" target="_blank">
+                  <img src="../img/30maps/day30_finalmap_wheretofinish.png" alt="Day 30 - Final map">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://public.tableau.com/app/profile/junio.mata/viz/30DaysMapChallenge/Dashboard1" target="_blank">Compilations of All 30 Maps</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 24 - Only circular -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-5 wow fadeInUp" data-wow-delay="2.5s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img portrait">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day24_onlycircular/manhattan_circles_map.png" target="_blank">
+                  <img src="../img/30maps/day24_CircularShapes_ManhattanBoundary.png" alt="Day 24 - Only circular">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day24_onlycircular/manhattan_circles_map.png" target="_blank">Manhattan Boundary by Circles</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 9: Day 8, Day 9, Day 15 -->
+          <!-- Day 8 - HDX -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="2.6s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img portrait">
+                <a href="https://public.tableau.com/app/profile/junio.mata/viz/Accesstoelectricity_16161908637570/Dashboard1" target="_blank">
+                  <img src="../img/30maps/day08_electricityaccess.png" alt="Day 8 - HDX">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://public.tableau.com/app/profile/junio.mata/viz/Accesstoelectricity_16161908637570/Dashboard1" target="_blank">Access to Electricity</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 9 - AI only -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="2.7s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day09_aionly/day9_ai_noly_publictransporttoNP.png" target="_blank">
+                  <img src="../img/30maps/day09_ai_noly_publictransporttoNP.png" alt="Day 9 - AI only">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day09_aionly/day9_ai_noly_publictransporttoNP.png" target="_blank">If Public Transport Connects US NP</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 15 - My data -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="2.8s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day15_mydata/day15_myrunningroutes.png" target="_blank">
+                  <img src="../img/30maps/day15_myrunningroutes.png" alt="Day 15 - My data">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day15_mydata/day15_myrunningroutes.png" target="_blank">Mapping My Running Journey</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 10: Day 16, Day 5, Day 10 -->
+          <!-- Day 16 - Choropleth -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="2.9s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img wide">
+                <a href="https://public.tableau.com/app/profile/junio.mata/viz/USClimateMigrations/Dashboard1" target="_blank">
+                  <img src="../img/30maps/day16_usclimaterisk.png" alt="Day 16 - Choropleth">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://public.tableau.com/app/profile/junio.mata/viz/USClimateMigrations/Dashboard1" target="_blank">Disaster Risks Across U.S. Counties</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 5 - A journey -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="3.0s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://public.tableau.com/app/profile/junio.mata/viz/USClimateMigrations/Dashboard1" target="_blank">
+                  <img src="../img/30maps/day05_usmigrations.png" alt="Day 5 - A journey">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://public.tableau.com/app/profile/junio.mata/viz/USClimateMigrations/Dashboard1" target="_blank">Migration Patterns in the U.S</a></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 10 - Pen & paper -->
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="3.1s">
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day10_penpaper/day10_alaskabyhand.jpg" target="_blank">
+                  <img src="../img/30maps/day10_alaskabyhand.jpg" alt="Day 10 - Pen &amp; paper">
+                </a>
+              </div>
+              <div class="portfolio-text">
+                <h3><a href="https://github.com/juniomata/30DaysMapChallenge/blob/main/day10_penpaper/day10_alaskabyhand.jpg" target="_blank">Alaska by Hand</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of .row portfolio-container -->
+      </div>
+    </div>
+    <!-- Portfolio End -->
+
+    <!-- Footer Start -->
+    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="footer-info">
+            <h2>Godfried Junio Matahelemual</h2>
+            <h3>New York, NY, United States</h3>
+            <div class="footer-menu">
+              <p>junio@datascience.or.id</p>
+            </div>
+            <div class="footer-social">
+              <a href="https://mail.google.com/mail/u/0/?fs=1&to=matahelemualjunio@gmail.com&tf=cm"><i class="fas fa-mail-bulk"></i></a>
+              <a href="https://www.youtube.com/watch?v=0OngyN1q75E&list=PL574h2o5_RfP7gHk0ga0UbXzohFId8Dgj&t=355s"><i class="fab fa-youtube"></i></a>
+              <a href="https://github.com/juniomata/"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/juniomata/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="container copyright">
+          <p>&copy; <a href="#">Junio Portfolio</a>, All Right Reserved | Template By <a href="https://htmlcodex.com">HTML Codex</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to top button -->
+    <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Pre Loader -->
+    <div id="loader" class="show">
+      <div class="loader"></div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/typed/typed.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="../lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="../mail/jqBootstrapValidation.min.js"></script>
+    <script src="../mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+  </body>
 </html>
